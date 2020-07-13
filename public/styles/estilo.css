@@ -1,0 +1,194 @@
+body {
+    background: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15pt;
+}
+
+header {
+    color: teal;
+    text-align: center;
+}
+
+
+
+section {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    width: 450px;
+    height: 380px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    justify-content: center;
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+.position input {
+    margin: 45px 80px;
+}
+
+.color:hover {
+    transform: scale(1.25); 
+    transition-duration:0.3s;
+}
+
+#corpo {
+    justify-content: center;
+    display: flex;
+}
+
+#rel {
+    background: #000;
+    color: #ffaa00;;
+    padding: 5px 12px 5px 12px;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 30pt;
+    width: 170px;
+    height: 70px;
+    border-radius: 8px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75); 
+}
+
+.btn-hover {
+    min-height: 45px; 
+    width: 175px; 
+    border-radius: 6px; 
+    border: 0px white; 
+    background-color: rgb(149, 165, 166); 
+    font-family: "Roboto Condensed", sans-serif; 
+    font-size: 12px; 
+    font-weight: 200; 
+    margin-bottom: 10%;
+}
+
+.btn-hover a {
+    text-decoration: none
+}
+
+.btn-hover:hover{
+   transform: scale(1.25); 
+   transition-duration:0.3s;
+}
+
+#imagem {
+    margin-top: 10px;
+    border-radius: 1000px;
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75); 
+}
+
+div.container1 {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+div.container2 {
+    position: relative;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+#hoje {
+    text-align: center;
+    color: teal;
+    margin-top: 10%;
+}
+
+footer {
+    color: teal;
+    text-align: center;
+    font-style: italic;
+}
+
+
+/*Aplicando efeito swing na imagem*/
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
