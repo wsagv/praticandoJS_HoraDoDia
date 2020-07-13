@@ -46,18 +46,18 @@ function relogio(){
     
     if (hor >= 00 && hor < 12) {
         // Bom dia
-        img.src = '/manha.png'
+        img.src = './manha.png'
         document.body.style.background = '#FFD700'
         texto.style.color = '#008080'
         texto.innerText = "Tenha um ótimo dia!"
     } else if (hor >= 12 && hor < 18) {
         // Boa tarde
-        img.src = '/tarde.png'
+        img.src = './tarde.png'
         document.body.style.background = '#f1f1f1'
         texto.innerText = "Tenha uma ótima tarde!"
     } else {
         // Boa noite
-        img.src = '/noite.png'
+        img.src = './noite.png'
         document.body.style.background = '#317f80'
         texto.style.color = '#008080'
         titulo.style.color = '#fff'
